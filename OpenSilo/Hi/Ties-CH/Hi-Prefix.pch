@@ -1,0 +1,32 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import "UITableViewCell+NIB.h"
+#import "TCHAppDelegate.h"
+
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "AFNetworking.h"
+
+#import "TCHMainViewController.h"
+#import "Macro.h"
+#import "Toast+UIView.h"
+#import "NSMutableDictionary+Extension.h"
+#import "NKColorSwitch.h"
+
+#import "AlertMessages.h"
+#import "NSString+Extensions.h"
+#import "TCHRootView.h"
+
+#endif
